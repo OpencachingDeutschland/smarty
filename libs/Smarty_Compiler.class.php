@@ -1521,7 +1521,7 @@ class Smarty_Compiler extends Smarty {
      * @param string $tag_args
      * @return array
      */
-    function _parse_attrs(string $tag_args = '')
+    function _parse_attrs($tag_args = '')
     {
 
         /* Tokenize tag attributes. */
