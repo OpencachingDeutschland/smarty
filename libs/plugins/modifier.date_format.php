@@ -45,14 +45,34 @@ function smarty_modifier_date_format($string, $format = 'b e, Y', $default_date 
 
     // fix for german locale, which is not supported by php date function
     $locale = setlocale(LC_COLLATE, 0);
-    if(str_starts_with($locale, 'en')) {
+    if (str_starts_with($locale, 'de')) {
         $englishMonths = [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December',
         ];
         $germanMonths = [
-            'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
-            'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'
+            'Januar',
+            'Februar',
+            'März',
+            'April',
+            'Mai',
+            'Juni',
+            'Juli',
+            'August',
+            'September',
+            'Oktober',
+            'November',
+            'Dezember',
         ];
         $date = str_replace($englishMonths, $germanMonths, $date);
     }
