@@ -1,4 +1,5 @@
 # Smarty 2 template engine
+this is a fork for Opencaching to make smarty compatible with php8.2
 ## Distribution repository
 Starting with Smarty 2.6.23 Composer has been configured to load the packages from github.
  
